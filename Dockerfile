@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:wheezy
+FROM resin/rpi-raspbian:stretch
 MAINTAINER Douglas Borg <dougborg@dougborg.org>
 
 RUN apt-get update && \
