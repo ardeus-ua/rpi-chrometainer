@@ -3,7 +3,7 @@
 
 # Disable DPMS / Screen blanking
 xset -dpms
-xset s off
+xset s 60
 
 # Reset the framebuffer's colour-depth TODO: Do I need this?
 # fbset -depth $( cat /sys/module/*fb*/parameters/fbdepth );
@@ -15,4 +15,4 @@ xwit -root -warp $( cat /sys/module/*fb*/parameters/fbwidth ) $( cat /sys/module
 matchbox-window-manager -use_titlebar no -use_cursor no &
 
 # Start the chrometainer with a url
-/home/pi/rpi-chrometainer/chrometainer http://dougborg.org
+/home/pi/rpi-chrometainer/chrometainer http://127.0.0.1:8123
